@@ -12,8 +12,8 @@ class Character:
         self.image = pygame.image.load('images/alien.bmp')
         self.rect = self.image.get_rect()
 
-        # Comienza una nueva imagen en la parte inferior central de la pantalla.
-        self.rect.midtop = self.screen_rect.midtop
+        # Comienza una nueva imagen en el centro de la pantalla.
+        self.rect.center = self.screen_rect.center
 
     def blitme(self):
         """Dibuja el personaje en su localización actual."""
